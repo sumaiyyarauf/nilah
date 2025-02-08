@@ -1,5 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
-import gsap from "gsap";
+import React, { useState, useEffect } from "react";
+import blue from "../../assets/blue 11.svg";
+
 import Venture from "./Venture";
 import Testimonials from "./Testimonials";
 import HatsAndStats from "./HatsAndStats";
@@ -9,18 +10,8 @@ const words = ["STARTUPS", "BUSINESS", "LEADERS"];
 const WelcomeHome = () => {
   const [index, setIndex] = useState(0);
   const [fade, setFade] = useState(true);
-  const imageRef = useRef(null);
 
   useEffect(() => {
-    // Rotate Image using GSAP
-    gsap.to(imageRef.current, {
-      rotation: 360,
-      duration: 40, // Slower rotation (20s per full turn)
-      repeat: -1,
-      ease: "linear",
-    });
-
-    // Text Changing Effect
     const interval = setInterval(() => {
       setFade(false);
       setTimeout(() => {
@@ -58,14 +49,11 @@ const WelcomeHome = () => {
         </button>
       </div>
 
-      <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
-        <img
-          ref={imageRef} // Attach the ref for GSAP animation
-          src="https://s3-alpha-sig.figma.com/img/53c4/2909/24861e667e3caafebf09e0e023a6fdf1?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=SsvHT1VqIchf3OQ232kpj3e8j8ReNUgL2DWekxG-PYUrUFdlB5bE6eqf8~6HKWOukk5yCYTKBp-EgoRwMPr5a-ICKMEwjDpstI-DFwcHptRIm~yM0Hq-hong7KNLWOgAtoE8bUMvthy1shf8ISgsFy4IWo9jOcpcGiVPHfuyzR6SufSZ4871dSi1GGHfV0UZeHQ28UxGW4g4Gt9ZYCPhwQEy8x6TdHawNBEUXqVlIdqmsQsI2jxErUSR0f3a8e9shpZatw6rsM-OBNEPg-b8H0a5Rk8wq0Zcda5o1idvQMM1-Bia7yj3Z2wp0ooRRCblJzjhqP96f64~hCTYRIDMYw__"
-          alt="Welcome Home"
-          className="w-full "
-        />
-      </div>
+      <div className="absolute right-0 top-0 h-full w-auto">
+          <img src={blue} alt="Welcome Home" className="h-full mt-10 w-auto object-cover"
+  />
+</div>
+
 
       
     </div>

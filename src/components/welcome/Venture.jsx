@@ -26,17 +26,13 @@ const Venture = () => {
 
   return (
     <div className="relative flex justify-center min-h-screen bg-[#F4FBFF] overflow-hidden">
-      {/* Use GIF from public folder */}
       <img
         src={animation}
-        alt="Flying Birds Animation"
+           alt=""
         className="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-40"
       />
-
-      {/* Center Image */}
       <img src={image1} alt="Center" className="absolute top-1/3 w-[750px] z-10" />
 
-      {/* Animated Heading */}
       <h1
         ref={headingRef}
         className="relative text-[100px] px-40 font-bold text-[#1A3261] top-0 leading-[120px] z-20"
@@ -44,21 +40,17 @@ const Venture = () => {
         Venture into new frontiers
       </h1>
 
-      {/* Left Image */}
       <img
         src={image2}
         alt="Left"
         className="absolute left-0 top-1/2 transform -translate-y-1/2 w-[670px] z-30"
       />
-
-      {/* Right Image */}
+\
       <img
         src={image3}
-        alt="Right"
-        className="absolute right-0 top-1/2 transform -translate-y-1/2 w-[670px] z-30"
+        alt=""
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 w-[670px] z-30"
       />
-
-
     <div className="absolute bottom-[20%] left-0 w-full h-[50%] bg-gradient-to-b from-[#F4FBFF] to-[#F4FBFF00]"></div>
      
     </div>
