@@ -3,11 +3,10 @@ import up from "../../assets/arrow-up.svg";
 import down from "../../assets/arrow-down.svg";
 
 const FAQ = () => {
-  // State for toggling each question section
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleSection = (index) => {
-    setOpenIndex(openIndex === index ? null : index); // Toggle the section
+    setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
@@ -19,30 +18,28 @@ const FAQ = () => {
       {[...Array(4)].map((_, index) => (
         <div
           key={index}
-          className={`mb-4 ${openIndex === index ? "bg-white" : "bg-blue-200"}`}
+          className={`mb-4 rounded-lg ${openIndex === index ? "bg-white shadow-md" : "bg-[#ECF5FF]"}`}
         >
           <div
-            className="flex justify-between items-center cursor-pointer p-4 rounded-md"
+            className="flex justify-between items-center cursor-pointer p-4 rounded-lg"
             onClick={() => toggleSection(index)}
           >
-            <h2 className="text-xl font-semibold text-gray-700">
+            <h2 className="text-xl font-semibold text-[#38587E]">
               Sagittis odio eget tempus volutpat. Ullamcorper
             </h2>
-            <span className="text-blue-600">
-              {openIndex === index ? (
-                <img src={up} alt="Up Arrow" />
-              ) : (
-                <img src={down} alt="Down Arrow" />
-              )}
+            <span className="text-blue-600 flex items-center">
+              <img
+                src={openIndex === index ? up : down}
+                alt="Toggle Arrow"
+                className="w-5 h-5 transition-transform duration-300"
+              />
             </span>
           </div>
           {openIndex === index && (
-            <div className="p-4 bg-white rounded-md mt-2 transition-all duration-300 ease-in-out">
-              <p className="text-gray-600 bg-white">
-                Sagittis odio eget tempus volutpat. Ullamcorper enim nunc urna
-                feugiat volutpat quam risus amet. Enim imperdiet diam etiam posuere
-                fringilla tellus interdum. Non at eget nullam lacus aliquam lectus
-                nulla vulputate mattis. Lorem molestie.
+            <div className="p-4 bg-white rounded-lg mt-2 transition-all duration-300 ease-in-out">
+              <p className="text-[#38587E]">
+                Sagittis odio eget tempus volutpat. Ullamcorper enim nunc urna feugiat volutpat quam risus amet. Enim imperdiet diam etiam posuere fringilla tellus interdum. Non at eget nullam lacus aliquam lectus
+               nulla vulputate mattis. Lorem molestie.
               </p>
             </div>
           )}

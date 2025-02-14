@@ -5,6 +5,8 @@ import Home from "./components/home/Home";
 import Contact from "./components/home/Contact";
 import FAQ from "./components/home/FAQ";
 import WelcomeHome from "./components/welcome/welHome";
+import AboutHome from "./components/about/AboutHome";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -17,9 +19,11 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/fqa" element={<FAQ />} />
             <Route path="/welcomehome" element={<WelcomeHome />} />
+            <Route path="/abthome" element={<AboutHome/>}/>
 
           </Routes>
         </main>
+        <Footer/>
       </div>
     </Router>
   );
