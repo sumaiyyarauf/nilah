@@ -7,7 +7,7 @@ import FAQ from './FAQ';
 
 const Home = () => {
   return (
-    <div className="flex flex-col items-center justify-center text-center pt-[8%] p-4">
+    <div className="flex flex-col items-center justify-center text-center pt-[8%] lg:pt-[10%] xl:pt-[20%] p-4">
       <h1 className="text-[36px] font-Inter text-[#6C83B2] mb-4">Expand your</h1>
       <img src={Image} alt="Decoration" className="w-auto " />
 

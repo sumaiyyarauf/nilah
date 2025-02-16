@@ -18,7 +18,7 @@ const testimonials = [
   },
 ];
 
-const Testimonials = () => {
+const Cards = () => {
   return (
     <div className=" py-16 px-8 flex justify-center">
       <div className="max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -38,4 +38,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default Cards;
