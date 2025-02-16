@@ -10,7 +10,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="p-6 px-[15%] min-h-screen bg-[#F4FBFF]">
+    <div className="p-6 sm:px-[6%] lg:px-[20%] min-h-screen bg-[#F4FBFF]">
       <h1 className="text-4xl font-medium font-Inter text-[#263A6E] text-center mb-8">
         Frequently Asked Questions
       </h1>

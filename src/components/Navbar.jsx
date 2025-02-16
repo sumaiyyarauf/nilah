@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
       <div className="container mx-auto flex justify-between items-center p-4">
         <h1 className="text-xl font-bold">
-          <Link to="/welcomehome">NILAH <br /> ADVISORS</Link>
+        <Link to="/welcomehome">NILAH <br /> ADVISORS</Link>
         </h1>
 
         <ul className="hidden md:flex text-[#263A6E] md:text-xl space-x-6">

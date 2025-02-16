@@ -63,8 +63,8 @@ const Testimonials = () => {
                   index % 2 === 0 ? "bg-[#FAE4F6]" : "bg-[#E4EAFA]"
                 }`}
               >
-                <p className={`font-medium md:text-[17px] lg:text-[19px] 2xl:text-[24.74px] ${index % 2 === 0 ? "text-[#551388]" : "text-[#151388]"}`}>
-                “Nilah Advisors is indispensable for Startup Founders. Not only they guide you with a good direction, but they also give you the courage to try to solve problems together and never give up. Founders who are starting a startup for the first time are recommended to start a business with their professional guidance and help.”
+                <p className={`font-medium md:text-[17px] lg:text-[17px] 2xl:text-[24.74px] ${index % 2 === 0 ? "text-[#551388]" : "text-[#151388]"}`}>
+                  “Nilah Advisors is indispensable for Startup Founders. Not only they guide you with a good direction, but they also give you the courage to try to solve problems together and never give up. Founders who are starting a startup for the first time are recommended to start a business with their professional guidance and help.”
                 </p>
                 <div className="flex items-center mt-7 gap-4">
                   <img src={Icon7} alt="Icon" className="w-10 h-10" />
